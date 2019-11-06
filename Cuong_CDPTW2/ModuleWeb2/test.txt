@@ -1,0 +1,215 @@
+
+    <!-- <script>
+    var items = [{
+        title: '1 Pancake with Caramel',
+        small: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex arcu, fringilla in urna quis, ultrices efficitur neque. Morbi lacinia arcu tellus, a imperdiet',
+        img: "../DoanPTWeb2/images/thumb4.png",
+        content: 'Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan,habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    }, {
+        title: '2 Pancake with Caramel',
+        small: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex arcu, fringilla in urna quis, ultrices efficitur neque. Morbi lacinia arcu tellus, a imperdiet',
+        img: "../DoanPTWeb2/images/thumb4.png",
+        content: 'Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan,habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    }, {
+        title: '3 Pancake with Caramel',
+        small: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex arcu, fringilla in urna quis, ultrices efficitur neque. Morbi lacinia arcu tellus, a imperdiet',
+        img: "../DoanPTWeb2/images/thumb4.png",
+        content: 'Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan,habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    }, {
+        title: '4 Pancake with Caramel',
+        small: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex arcu, fringilla in urna quis, ultrices efficitur neque. Morbi lacinia arcu tellus, a imperdiet',
+        img: "../DoanPTWeb2/images/thumb4.png",
+        content: 'Ultrices In massa est, dignissim in libero ac, fringilla ornare mi.Ultrices eget justo. Nam purus lacus, efficitur eget laoreet sed finibus nec neque. Cras eget enim in diam dapibus sagittis. accumsan,habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+    }]
+
+    // new Vue({
+    //     el: '#demo',
+    //     data: {
+    //         items: items
+    //     },
+    //     methods: {
+    //             nextSlide() {
+    //                 this.current_slide_number++;
+    //             },
+    //             prevSlide() {
+    //                 this.current_slide_number--;
+    //             }
+
+    //         }
+
+    // });
+    
+
+    function callMe() {
+        var vm = new Vue({
+            el: '#root',
+            data: {
+                current_slide_number: 0,
+                cases:items
+            },
+            methods: {
+                nextSlide() {
+                    this.current_slide_number++;
+                },
+                prevSlide() {
+                    this.current_slide_number--;
+                }
+
+            }
+
+        })
+    }
+    callMe();
+    
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <section class="special">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header wow fadeInDown">
+                            <h1 class="white">today's specials<small>A little about us and a breif history of how we
+                                    started.</small></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wow fadeInUp">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div id="demo" class="flexslider special-slider">
+                            <div class="slides" id="slides">
+                                <input checked="" type="radio" name="slider" id="slide1" selected="false">
+                                <input type="radio" name="slider" id="slide2" selected="false">
+                                <input type="radio" name="slider" id="slide3" selected="false">
+                                <input type="radio" name="slider" id="slide4" selected="false">
+                                <div id="slides">
+
+                                    <div id="overflow">
+                                        <div class="inner">
+                                            <article v-for="item in items" class="slide image-container">
+                                                <li>
+                                                    <div class=" slider-img ">
+                                                        <img :src="item.img" alt="item.title" />
+                                                    </div>
+                                                    <div class="slider-content">
+                                                        <div class="title page-header">
+                                                            <h1>{{item.title}}<small>{{item.small}}</small></h1>
+                                                        </div>
+                                                        <div class="teaser">
+                                                            <p>{{item.content}}</p>
+                                                        </div>
+                                                        <a class="btn btn-default" href="#" role="button">Order
+                                                            now</a>
+                                                        <a class="btn btn-secondary" href="#" role="button">Add
+                                                            to
+                                                            cart</a>
+                                                    </div>
+                                                </li>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                                <div class="direction-nav hidden-sm">
+                                    <div class="prev    ">
+                                        <a @click="prev" href='#'>
+                                            <img src="../DoanPTWeb2/images/left-arrow.png" nalt="" /></a>
+                                    </div>
+                                    <div class="next">
+                                        <a @click="next" href='#'>
+                                            <img src="../DoanPTWeb2/images/right-arrow.png" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+
+                        <div id="root" class="flexslider special-slider">
+                            <div class="slides" id="slides" v-for="(case_item, index) in cases" :key="case_item.id"
+                                v-show="current_slide_number === index"
+                                :class="{'is-active-slide': current_slide_number === index}">
+                                <input checked="" type="radio" name="slider" id="slide1" selected="false">
+                                <input type="radio" name="slider" id="slide2" selected="false">
+                                <input type="radio" name="slider" id="slide3" selected="false">
+                                <input type="radio" name="slider" id="slide4" selected="false">
+                                <div id="slides">
+                                    <div id="overflow">
+                                        <div class="inner">
+                                            <article class="slide image-container">
+                                                <div>
+                                                    <div class="case-slider__info">
+
+                                                        <div class=" slider-img ">
+                                                            <img :src="case_item.img" alt="case_item.title" />
+                                                        </div>
+                                                        <div class="slider-content">
+                                                            <div class="title page-header">
+                                                                <h1>{{case_item.title}}<small>{{case_item.small}}</small>
+                                                                </h1>
+                                                            </div>
+                                                            <div class="teaser">
+                                                                <p>{{case_item.content}}</p>
+                                                            </div>
+                                                            <a class="btn btn-default" href="#" role="button">Order
+                                                                now</a>
+                                                            <a class="btn btn-secondary" href="#" role="button">Add
+                                                                to
+                                                                cart</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="slide1"></label>
+                                <label for="slide2"></label>
+                                <label for="slide3"></label>
+                                <label for="slide4"></label>
+                                <div class="direction-nav hidden-sm case-slider__navigation">
+                                    <div class="next" v-if="cases.length-1!=current_slide_number">
+                                        <button @click="nextSlide"><a><img src="./images/right-arrow.png"
+                                                    alt="" /></a></button>
+                                    </div>
+                                    <div class="prev" v-if="current_slide_number!=0">
+                                        <button @click="prevSlide"><a><img src="./images/left-arrow.png"
+                                                    alt="" /></a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- <div class="row" id="todo-list-example">
+            <div v-for="(drink,index) in drinks" class="w-full flex">
+                <transition name="transition-slide-right"><button v-show="drink.amount" type="button"
+                        class="btn btn-danger" v-on:click="click1(index)">-</button></transition>
+
+                <a class="btn btn-success">{{drink.name}} ({{drink.amount}})</a>
+
+                <button type="button" class="btn btn-danger" v-on:click="click2(index)">+</button>
+            </div>
+        </div> -->
