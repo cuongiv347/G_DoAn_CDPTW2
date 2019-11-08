@@ -16,7 +16,9 @@
                 </div>
                 <div class="features-content">
                     <div class="page-header">
-                        <h1>Serving with love</h1>
+                        
+                   <a href="module7.php"><h1>Serving with love</h1></a> 
+                        
                     </div>
                     <p>Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
                 </div>
@@ -29,7 +31,7 @@
                 </div>
                 <div class="features-content" >
                     <div class="page-header">
-                        <h1>Serving with love</h1>
+                    <a href="module7.php"><h1>Serving with love</h1></a>
                     </div>
                     <p>Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
                 </div>
@@ -42,7 +44,7 @@
                 </div>
                 <div class="features-content">
                     <div class="page-header">
-                        <h1>Serving with love</h1>
+                    <a href="module7.php"><h1>Serving with love</h1></a>
                     </div>
                     <p>Aenean suscipit vehicula purus quis iaculis. Aliquam nec leo nisi. Nam urna arcu, maximus eget ex nec, consequat pellentesque enim. Aliquam tempor fringilla odio, vel ullamcorper turpis varius eu.</p>
                 </div>
@@ -51,3 +53,27 @@
     </div>
 </div>
 </section>
+    <section class="menu space60">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="page-header wow fadeInDown">
+                  <h1>List Style<small>These fine folks trusted the award winning restaurant.</small></h1>
+               </div>
+            </div>
+         </div>
+         <div class="food-menu wow fadeInUp">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="menu-tags">
+                     <div class="reservation-btn">
+                     <a href="./module9.php" class="btn btn-default">LIST MENU</a>
+                    
+                    </div>
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+      </div>
+   </section>

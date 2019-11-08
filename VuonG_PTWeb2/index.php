@@ -13,28 +13,17 @@
     <link rel="stylesheet" href="css/plugin.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/angular.min.js"></script>
-    <script src="js/module5-6.js"></script>
-
+   
 </head>
 
 <body>
-       
+
     <?php include './module5.php'; ?>
-    <?php include './module6.php';?>
-    <script type="text/javascript">
-        $(function() {
-        SyntaxHighlighter.all();
-    });
-    $(window).load(function() {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            rtl: true,
-            start: function(slider) {
-                $('body').removeClass('loading');
-            }
-        });
-    });
-    </script>
+    <?php include './module6.php'; ?>
+     
+    
+    
+    
     <script type="text/javascript">
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope) {
@@ -63,7 +52,7 @@ var span = document.getElementsByClassName("close")[0];
         }
     }    
      </script>
-
+    <script src="js/script.js"></script>
     <script defer src="../jquery.flexslider.js"></script>   
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
